@@ -1,10 +1,16 @@
-import './App.css';
+import React from 'react'
+import { CssBaseline } from "@material-ui/core";
+
+import MainMenu from './components/MainMenu'
+import Greeting from './components/Greeting'
 
 function App() {
   return (
-    <h1>
-      First version of portfolio
-    </h1>
+    <React.Fragment>
+      <CssBaseline />
+      <MainMenu />
+      <Greeting />
+    </React.Fragment>
   );
 }
 
