@@ -1,0 +1,2 @@
+(this["webpackJsonpmavchi.github.io"]=this["webpackJsonpmavchi.github.io"]||[]).push([[0],{10:function(t,i,n){},11:function(t,i,n){"use strict";n.r(i);var e=n(1),o=n.n(e),c=n(3),r=n.n(c),s=(n(8),n(0));var h=function(){return Object(s.jsx)("h1",{children:"First version of portfolio"})};n(10);r.a.render(Object(s.jsx)(o.a.StrictMode,{children:Object(s.jsx)(h,{})}),document.getElementById("root"))},8:function(t,i,n){}},[[11,1,2]]]);
+//# sourceMappingURL=main.2cd5d59b.chunk.js.map
