@@ -1,0 +1,22 @@
+
+.filter {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+
+
+    .listItem {
+        margin-right: 5px;
+        padding: 7px;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: bisque;
+
+        &.active {
+            color: #260961;
+        }
+    }
+}
