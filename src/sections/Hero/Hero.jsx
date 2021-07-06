@@ -34,7 +34,7 @@ export default function Hero() {
             <br />
             <span ref={textRef2}></span>
           </div>
-          <div className="button">
+          <div className="button link">
               <a href="#about">View my work</a>
           </div>
         </div>
