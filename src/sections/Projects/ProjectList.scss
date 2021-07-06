@@ -1,0 +1,126 @@
+
+.projectList {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-rows: repeat(2, 300px);
+  grid-template-columns: repeat(3, 1fr);
+
+  .item {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      
+      &:hover {
+        + .info {
+          top: 0;
+        }
+      }
+    }
+    .info {
+      background-color: white;
+      color: black;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: -100%;
+      left: 0;
+      transition: all 2s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0; 
+
+      &:hover {
+        top: 0;
+      }
+
+      .title {
+          margin-top: 30px;
+      }
+
+      .techniques {
+      }
+
+    }
+  }
+}
+
+/*
+$width: calc(1 / 3 * 100%);
+
+.projectList {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+
+  .item {
+    width: $width;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: white;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      &:hover {
+        + .info {
+          top: 0;
+        }
+      }
+    }
+
+    .info {
+      background-color: white;
+      color: black;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: -100%;
+      left: 0;
+      transition: all 2s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0; 
+
+      &:hover {
+        top: 0;
+      }
+
+      .title {
+          margin-top: 30px;
+      }
+
+      .techniques {
+      }
+
+      .button {
+          margin-bottom: 20px;
+        padding: 10px 5px;
+        border: 2px solid black;
+      }
+    }
+  }
+}
+*/

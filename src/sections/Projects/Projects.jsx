@@ -4,6 +4,8 @@ import { useState, useEffect } from 'react'
 import { filterItems, projectItems } from '../../data'
 import Filter from './Filter'
 import ProjectList from './ProjectList'
+import Project from './Project'
+import SectionTitle from '../../components/SectionTitle/SectionTitle'
 
 
 const Projects = () => {
@@ -20,9 +22,10 @@ const Projects = () => {
 
     return (
       <div className='projects' id='projects'>
-        <h2 className='title'>Projects</h2>
+        <SectionTitle text='Projects' />
         <Filter filterItems={filterItems} selected={selectedFilter} setSelected={setSelected} />
-        <ProjectList data={data} />
+        <ProjectList data={data} setSelectedProject={setSelectedProject} />
+        <Project selectedProject={selectedProject} />
       </div>
     );
 }

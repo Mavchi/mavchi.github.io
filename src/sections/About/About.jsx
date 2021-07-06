@@ -1,16 +1,20 @@
 import './About.scss';
 
+import SectionTitle from '../../components/SectionTitle/SectionTitle';
+
 export default function About() {
   return (
     <section className='about' id='about'>
-      <div className='title'>About</div>
+      <SectionTitle text='About' />
       <div className='container'>
         <div className='left'>
-          <img src='assets/img/oma3.jpg' alt='' className='avatar' />
-          <h1 className='title'>Adadsa</h1>
-          <div className='description'>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non optio quos doloremque laboriosam, tenetur provident quod odio, facilis cumque in impedit iste veritatis, quas soluta
-            architecto pariatur sit ratione velit.
+          <div className='infoContainer'>
+            <img src='assets/img/oma3.jpg' alt='' className='avatar' />
+            <h1 className='title'>Adadsa</h1>
+            <div className='description'>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non optio quos doloremque laboriosam, tenetur provident quod odio, facilis cumque in impedit iste veritatis, quas soluta
+              architecto pariatur sit ratione velit.
+            </div>
           </div>
         </div>
         <div className='right'>

@@ -1,17 +1,106 @@
-.app {
-    height: 100vh;
+@import './global.scss';
 
-    .sections {
-        width: 100%;
-        /*
+.app {
+  height: 100vh;
+
+  .sections {
+    width: 100%;
+    /*
         height: calc(100vh - 70px);
         top: 70px;
         position: relative;*/
 
-        > * {
-            width: 100vw;
-            min-height: 100vh;
-            /* height: calc(100vh - 70px); */
-        }
+    > * {
+      width: 100vw;
+      padding: 50px 0;
+      /* height: calc(100vh - 70px); */
     }
+  }
 }
+
+.popup-content {
+  margin: auto;
+  background: rgb(255, 255, 255);
+  width: 50%;
+  padding: 5px;
+}
+.popup-arrow {
+  color: rgb(255, 255, 255);
+}
+[role='tooltip'].popup-content {
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+}
+
+.popup-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+[data-popup='tooltip'].popup-overlay {
+  background: transparent;
+}
+
+.modal {
+  position: relative;
+
+  .close {
+    background-color: salmon;
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: 0;
+    top: 0;
+    font-size: 24px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
+    z-index: 100;
+    overflow: visible;
+  }
+
+  .header {
+      margin-top: 30px;
+  }
+}
+/*
+.modal {
+  font-size: 12px;
+  background-color: $bgColorDark;
+  color: white;
+  overflow: visible;
+  width: 80%;
+  margin: auto;
+
+  .header {
+    width: 100%;
+    border-bottom: 1px solid gray;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+  }
+  .content {
+    width: 100%;
+    padding: 10px 5px;
+  }
+  .actions {
+    width: 100%;
+    padding: 10px 5px;
+    margin: auto;
+    text-align: center;
+  }
+  .close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -10px;
+    top: -10px;
+    font-size: 24px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
+  }
+}
+*/

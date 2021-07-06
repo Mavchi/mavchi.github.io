@@ -1,3 +1,4 @@
+@import '../../global.scss';
 
 .filter {
     list-style: none;
@@ -13,10 +14,10 @@
         padding: 7px;
         border-radius: 10px;
         cursor: pointer;
-        background-color: bisque;
+        background-color: $bgColorDark;
 
         &.active {
-            color: #260961;
+            background-color: #343a40;
         }
     }
 }
