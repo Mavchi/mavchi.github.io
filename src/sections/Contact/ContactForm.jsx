@@ -49,7 +49,7 @@ function ContactForm() {
               },
             })}
           />
-          <label for='name'>Name</label>
+          <label htmlFor='name'>Name</label>
         </div>
 
         <div className='input-container'>
@@ -62,7 +62,7 @@ function ContactForm() {
               pattern: { value: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/, message: 'Please enter valid email address' },
             })}
           />
-          <label for='email'>Email address</label>
+          <label htmlFor='email'>Email address</label>
         </div>
       </div>
 
@@ -79,18 +79,19 @@ function ContactForm() {
             },
           })}
         />
-        <label for='subject'>Subject</label>
+        <label htmlFor='subject'>Subject</label>
       </div>
 
       <div className='input-container'>
-        <textarea 
-          id='message' 
-          rows={3} 
-          placeholder='Message' 
-          {...register('message', { 
-              required: { value: true, message: 'Please enter a message' } 
-        })} />
-        <label for='message'>Message</label>
+        <textarea
+          id='message'
+          rows={3}
+          placeholder='Message'
+          {...register('message', {
+            required: { value: true, message: 'Please enter a message' },
+          })}
+        />
+        <label htmlFor='message'>Message</label>
       </div>
 
       <Button type='submit' text='Submit' />
