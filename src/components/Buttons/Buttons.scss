@@ -1,6 +1,6 @@
 @import '../../global.scss';
 
-.button {
+.btn {
   background-color: $mainColor;
   color: $bgColorDark;
   border: 1px solid $bgColorDark;
@@ -9,13 +9,17 @@
   position: relative;
   overflow: hidden;
   z-index: 1;
+  cursor: pointer;
 
   &.link {
     text-decoration: none;
 
     &:active {
-      color: $mainColor;
+      color: $bgColorDark;
     }
+  }
+
+  &.normal {
   }
 
   &:after {

@@ -52,6 +52,7 @@
     border: 1px solid #cfcece;
     z-index: 100;
     transition: all 1s ease;
+    overflow: hidden;
 
     &:hover {
       transform: scale(1.1);

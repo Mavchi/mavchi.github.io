@@ -10,7 +10,6 @@ import SectionTitle from '../../components/SectionTitle/SectionTitle'
 
 const Projects = () => {
     const [selectedFilter, setSelected] = useState(filterItems[0])
-    const [selectedProject, setSelectedProject] = useState(null)
     const [data, setData] = useState(projectItems);
 
     useEffect(() => {
@@ -24,8 +23,7 @@ const Projects = () => {
       <div className='projects' id='projects'>
         <SectionTitle text='Projects' />
         <Filter filterItems={filterItems} selected={selectedFilter} setSelected={setSelected} />
-        <ProjectList data={data} setSelectedProject={setSelectedProject} />
-        <Project selectedProject={selectedProject} />
+        <ProjectList data={data} />
       </div>
     );
 }

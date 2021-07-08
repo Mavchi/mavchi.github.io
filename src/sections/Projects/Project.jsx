@@ -1,6 +1,7 @@
 import './Project.scss';
 import Popup from 'reactjs-popup';
 import Tag from '../../components/Tag/Tag';
+import Button from '../../components/Buttons/Button';
 import ButtonLink from '../../components/Buttons/ButtonLink';
 
 const Project = ({ data }) => {
@@ -11,7 +12,7 @@ const Project = ({ data }) => {
     const project = data.modal
     
     return (
-      <Popup trigger={<button className='button'> Learn more </button>} modal nested>
+      <Popup trigger={<button className="btn">Learn more</button>} modal nested>
         {(close) => (
           <div className='modal'>
             <button className='close' onClick={close}>
@@ -42,3 +43,4 @@ const Project = ({ data }) => {
 };
 
 export default Project;
+// <button className='button'> Learn more </button>
